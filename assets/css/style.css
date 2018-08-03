@@ -62,7 +62,7 @@ h2 {
 }
 .break{
   height: 5px;
-  width: 890px;
+  width: 900px;
   background-color: grey;
 }
 img.pic {
@@ -150,31 +150,33 @@ form {
 
   /*This begins the portfolio page*/
   .stack {
-    margin: 20px 20px 0 0;
+    margin: 20px 0 0 0; /*this put a margin on top of the photos and
+    below the breaker bar*/
   }
 
   .interests {
-    position: relative;
-    display: inline-block;
-    width: 20%;
+    position: relative; /*this allows you align the property elsewhere */
+    display: inline-block; /*makes all the divs appear on the same line */
+    width: 20%; /* this is 20% of 900px (container box) divided by 5 photos */
     height: 200px;
-    float: left;
+    float: left; 
     text-align: center;
-    overflow: hidden; /* overflow keeps the content inside container*/
+    overflow: hidden; /* overflow keeps the content inside container/wrapper */
   }
 
   .interests img {
 
-    height: 100%;
+    height: 100%; /* this is taking up the full height (200px) */
     width: auto;
     overflow: hidden; /*hidden hides anything extra outside the image*/
   }
 
   .interests h3 {
-    position: absolute;
+    position: absolute; /*aligns the property in relation to it's parent element*/
     background-color: #4aaaa5;
     color: #fff;
-    bottom: 20px;
+    bottom: 20px; /* these keep it to 20px from the bottom, left & right
+                     of the current containter, the images. */
     left: 0;
     right: 0;
   }
