@@ -23,18 +23,22 @@
                 <h2>Contact</h2>
                 <section class="break"></section>
                 <!--I dont know why yet, but for="" in label and id="" in input need to match-->
-                <!--Updated: it's a formal way to link a label to a form widget.-->
+                <!--Updated: it's a formal way to link a label to a form(input) widget.-->
                   <form>
                     <div>
-                     <label for="name">Name:</label><br>
+                     <label for="name">Name:</label>
+                        <br>
                       <input type="text" id="name" name="user_name" placeholder="Name:">
                     </div>
                     <div>
-                     <label for="mail">E-mail:</label><br>
+                     <label for="mail">E-mail:</label>
+                        <br>
                       <input type="email" id="mail" name="user_mail" placeholder="noemail@noemail.com">
                     </div>
                     <div>
-                      <label for="msg">Message:</label><br>
+                      <label for="msg">Message:</label>
+                        <br>
+                        <!--textarea's will overwrite the placeholder if there is a space or text in the content area-->
                       <textarea id="msg" name="user_message" placeholder="Message:"></textarea>
                    </div>
                    <div class="button">
