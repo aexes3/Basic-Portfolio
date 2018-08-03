@@ -1,6 +1,7 @@
 /*This begins the bio page - has links to the contact and portfolio page for general sizing*/
 body{
   background-color: #ffffff;
+  margin: 0;
 }
 
 .header{
@@ -148,20 +149,32 @@ form {
   /*This ends the contact page*/
 
   /*This begins the portfolio page*/
-  #stack img {
+  .stack {
     margin: 20px 20px 0 0;
-    position: relative;
-    width: 150px;
-    height: 100px;
   }
 
   .interests {
+    position: relative;
     display: inline-block;
-    position: absolute;
-    color:#fff;
-    background-color: #4aaaa5;
-    width: 150px;
-    height: 25px;
+    width: 20%;
+    height: 200px;
+    float: left;
     text-align: center;
+    overflow: hidden; /* overflow keeps the content inside container*/
   }
-  
+
+  .interests img {
+
+    height: 100%;
+    width: auto;
+    overflow: hidden; /*hidden hides anything extra outside the image*/
+  }
+
+  .interests h3 {
+    position: absolute;
+    background-color: #4aaaa5;
+    color: #fff;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+  }
